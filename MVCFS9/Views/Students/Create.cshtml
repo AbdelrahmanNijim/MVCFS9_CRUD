@@ -1,0 +1,35 @@
+﻿@{
+    Layout = "_mainLayout";
+}
+<h2>Add Student</h2>
+
+<form asp-controller="Students" asp-action="Store">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Name</label>
+            <input type="text" class="form-control" placeholder="Student Name" name="Name">
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="Email">
+        </div>
+      
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password" name="Password">
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Phone</label>
+            <input type="text" class="form-control" placeholder="phone number" name="Phone">
+        </div>
+         
+    
+    </div>
+    <br/>
+     <button type="submit" class="btn btn-primary">Add Student</button>
+        
+    
+   
+</form>

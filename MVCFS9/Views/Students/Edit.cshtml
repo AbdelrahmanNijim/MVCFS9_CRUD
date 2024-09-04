@@ -1,0 +1,39 @@
+﻿@model Student
+@{
+    Layout = "_mainLayout";
+}
+
+<h2>Edit Student Information</h2>
+
+<form asp-controller="Students" asp-action="Update">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label asp-for="Name" for="inputEmail4"></label>
+            <input asp-for="Name"  class="form-control" placeholder="Student Name"  >
+        </div>
+
+        <input type="hidden" class="form-control" placeholder="Student Name" name="Id" value="@Model.Id">
+
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="Email" value="@Model.Email">
+        </div>
+
+        @Html.HiddenFor(model=>model.Id)
+      
+
+      
+
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Phone</label>
+            <input type="text" class="form-control" placeholder="phone number" name="Phone" value="@Model.Phone">
+        </div>
+
+
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Update Student Information</button>
+
+
+
+</form>

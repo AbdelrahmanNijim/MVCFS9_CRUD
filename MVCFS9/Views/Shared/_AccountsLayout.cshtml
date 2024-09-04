@@ -1,0 +1,81 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-md-between align-content-between">
+
+
+                    <ul class="navbar-nav flex-grow-1">
+
+
+                        <li class="nav-item">
+                            <a class="btn btn-outline-dark" href="/Accounts/Register">Register </a>
+
+                        </li>
+
+                     
+
+                        <li class="nav-item">
+                            <a class="btn btn-outline" href="/Accounts/Login">Login</a>
+
+                        </li>
+
+
+                    </ul>
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+            </div>
+        </nav>
+
+
+
+
+    </header>
+
+    <main>
+        <section>
+
+            <div class="card">
+                <h5 class="card-header"> Students</h5>
+                <div class="card-body">
+
+                    @RenderBody()
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    </main>
+
+    <footer class="bg-secondary text-center">
+        <h3>Footer</h3>
+
+</body>
+</html>
